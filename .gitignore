@@ -16,3 +16,5 @@
 
 # MacOS Shenanigans
 .DS_Store
+vendor
+!Makefile
