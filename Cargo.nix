@@ -25,7 +25,7 @@ args@{
   cargoConfig ? {},
 }:
 let
-  nixifiedLockHash = "e509537b81627214eb83d303516560d8e6195aee95b352a9435635152eba25d0";
+  nixifiedLockHash = "bf5d131acaeee757a7937cc8bf9df0f1bf4edfcf310f14829fefbed8bfbf89ab";
   workspaceSrc = if args.workspaceSrc == null then ./. else args.workspaceSrc;
   currentLockHash = builtins.hashFile "sha256" (workspaceSrc + /Cargo.lock);
   lockHashIgnored = if ignoreLockHash
@@ -63,7 +63,7 @@ in
       url = "https://github.com/meta-introspector/rust-base64";
       name = "base64";
       version = "0.22.1";
-      rev = "bf44ac0b08e62bc1f2de5bbd81ea13db1e771854";
+      rev = "4b5dc67900e4da93ca2348487491245520bc0681";
       ref = "feature/CRQ-016-nixify";};
     features = builtins.concatLists [
       [ "alloc" ]
