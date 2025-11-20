@@ -81,11 +81,11 @@ required-features = []
 name = "transcode"
 required-features = []
 
-[patch.crates-io]
-time-macros = { git = "https://github.com/meta-introspector/time-rs", branch = "feature/CRQ-016-nixify", features = [ "default", "formatting", "large-dates",   "parsing",   "serde" ] }
-time = { git = "https://github.com/meta-introspector/time-rs", branch = "feature/CRQ-016-nixify", features = [  "default", "alloc", "formatting", "large-dates", "local-offset", "macros", "parsing", "quickcheck", "serde-human-readable", "serde-well-known", "std", "rand", "serde",  "wasm-bindgen"] }
-base64 = { branch = "feature/CRQ-016-nixify",      git = "https://github.com/meta-introspector/rust-base64" }
-ron = { branch = "feature/CRQ-016-nixify",      git = "https://github.com/meta-introspector/ron-rs" }
+# [patch.crates-io]
+# time-macros = { git = "https://github.com/meta-introspector/time-rs", branch = "feature/CRQ-016-nixify", features = [ "default", "formatting", "large-dates",   "parsing",   "serde" ] }
+# time = { git = "https://github.com/meta-introspector/time-rs", branch = "feature/CRQ-016-nixify", features = [  "default", "alloc", "formatting", "large-dates", "local-offset", "macros", "parsing", "quickcheck", "serde-human-readable", "serde-well-known", "std", "rand", "serde",  "wasm-bindgen"] }
+# base64 = { branch = "feature/CRQ-016-nixify",      git = "https://github.com/meta-introspector/rust-base64" }
+# ron = { branch = "feature/CRQ-016-nixify",      git = "https://github.com/meta-introspector/ron-rs" }
 
 #[workspace]
 #[package.metadata.cargo2nix]
